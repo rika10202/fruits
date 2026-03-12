@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>果物の価格表</title>
+ 
+</head>
+<body>
+  <header>
+  <h1>このページについて</h1>
+  <p><strong>リンゴ</strong>と
+    <strong>オレンジ</strong>と
+    <strong>ブドウ</strong>
+    <strong>梨</strong>と
+    <strong>いちご</strong>    
+    について紹介します。</p>
+  </header>
+
+  <style>
+    h1{
+        color: #ffffe0;
+        background-color: #dc143c;
+        width: 50%;
+        height: 50%;
+        margin-right: auto;
+        border: 5px dotted #ffffe0; 
+      }
+      
+      body
+      {
+        background-color: #f0e68c;
+        background-image: url(images/images.png);
+      }
+      /* {background-image: url(images/images.png);} */
+  </style>
+
+  <br>
+   <hr>
+
+  <h1>ワード検索</h1>
+ 
+  <form action="#" method="post">
+    <input type="text" name="name" placeholder="名前">
+    <input type="submit" value="検索">
+   </form>
+ 
+  <h1>果物の価格表</h1>
+  <table border="1">
+    <style>
+      table{background-color: ivory;}
+    </style>
+  <thead>
+      <tr>
+        <th rowspan="2">名前</th>
+        <th rowspan="2">画像</th>
+        <th rowspan="2">科目</th>
+        <th colspan="2">価格</th>
+      </tr>
+    <tr>
+      <th>小</th>
+      <th>大</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><a href="https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%B3%E3%82%B4">リンゴ</a></td>
+        <td><img src="https://learnwithnakamura.s3.ap-northeast-1.amazonaws.com/html-stepup-v2023/apple.jpg" alt="リンゴ"></td>
+        <td>バラ科リンゴ属</td>
+        <td>100円</td>
+        <td>300円</td>
+      </tr>
+ 
+      <tr>
+        <td><a href="https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8">オレンジ</a></td>
+        <td><img src="https://learnwithnakamura.s3.ap-northeast-1.amazonaws.com/html-stepup-v2023/orange.jpg" alt="オレンジ"></td>
+        <td>ミカン科ミカン属</td>
+        <td>50円</td>
+        <td>100円</td>
+      </tr>
+ 
+      <tr>
+        <td><a href="https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%89%E3%82%A6">ブドウ</a></td>
+        <td><img src="https://learnwithnakamura.s3.ap-northeast-1.amazonaws.com/html-stepup-v2023/grape.jpg" alt="ブドウ"></td>
+        <td>ブドウ科ブドウ属</td>
+        <td>1,000円</td>
+        <td>4,000円</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoAo_HIv7hETAPAtXlWb3PY1i6Q7YFSoAZFA&s">梨</a></td>
+        <td><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoAo_HIv7hETAPAtXlWb3PY1i6Q7YFSoAZFA&s" alt="梨"></td>
+        <td>バラ科ナシ属</td>
+        <td>200円</td>
+        <td>500円</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%81%E3%82%B4">いちご</a></td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO6DQY1MzbVlNMBJaoDUwLVBv1n9TEGHjWDg&s" alt="いちご"></td>
+        <td>バラ科オランダイチゴ属</td>
+        <td>300円</td>
+        <td>1,500円</td>
+      </tr>
+      
+   </tbody>
+  </table>
+ 
+  <br>
+  <hr>
+
+  <h1>お問い合わせフォーム</h1>
+  <p>お問合せしたい内容を入力してください。</p>
+
+  <br>
+ 
+    <dl>
+      <dt><label for="username">お名前</label></dt>
+      <dd><input id="username" type="text" name="username"></dd>
+ 
+      <dt><label for="email">メールアドレス</label></dt>
+      <dd><input type="text" name="email"></dd>
+ 
+      <dt><label for="area">お住まいの地域</label></dt>
+      <dd>
+        <select id="area" name="area">
+          <option value="" selected>選択してください</option>
+          <option value="hokkaido">北海道</option>
+          <option value="tohoku">東北</option>
+          <option value="kanto">関東</option>
+          <option value="tyubu">中部</option>
+          <option value="kinki">近畿</option>
+          <option value="sikoku">四国</option>
+          <option value="kyusyu">九州</option>
+          <option value="okinawa">沖縄</option>
+        </select>
+      </dd>
+ 
+      <dt>性別</dt>
+      <dd>
+        <label for="radio"><input type="radio" name="gender" value="male" checked>男性</label>
+        <label for="radio"><input type="radio" name="gender" value="female">女性</label>
+      </dd>
+ 
+      <dt><label for="area">購入したい果物</label></dt>
+      <dd>
+        <select id="area" name="area">
+          <option value="" selected>選択してください</option>
+          <option value="apple">リンゴ</option>
+          <option value="orange">オレンジ</option>
+          <option value="grapes">ブドウ</option>
+          <option value="pear">梨</option>
+          <option value="strawberry">いちご</option>
+        </select>
+      </dd>
+
+      <hr>
+      <br>
+
+      <dt>
+        <label for="contents">個数を入力してください</label>
+        <p>※個数は<strong>3桁まで</strong>です。</p>
+        <dd>
+        <textarea id="contents" name="contents" required maxlength="3"></textarea>
+        </dd>
+      </dt>
+    
+      <dt><label for="contents">お問い合わせの内容
+        
+      <br>
+      
+      ※<strong>200字以下</strong>で入力してください。</label>
+    <br>
+
+    </dt>
+      <dd>
+        <textarea id="contents" name="contents" required maxlength="200"></textarea>
+      </dd>
+      <dt><label for="privacy">プライバシーポリシーに同意する</label></dt>
+      <dd>
+        <input id="privacy" type="checkbox" name="privacy" value="1">
+       
+      <br>
+      <br>
+      <hr>
+      <br>
+
+      </dd>
+      <input type="submit" value="送信">
+      </dl>
+
+</body>
+</html>
